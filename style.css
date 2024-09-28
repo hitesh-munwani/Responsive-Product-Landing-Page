@@ -250,31 +250,33 @@ header nav a:hover {
 
 /* Footer */
 footer {
-  background-color: #333333;
+  background-color: #333;
   color: #fff;
   padding: 1em;
   text-align: center;
 }
 
+.footer-content {
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+  align-items: center; /* Center align items */
+}
+
 .social-icons {
   display: flex;
-  margin-top: -52px; /* Space above the icons */
+  justify-content: center; /* Center the social icons */
+  margin-top: 10px; /* Space between text and icons */
 }
 
 .social-icons a {
-  color: #fff; /* Icon color */
-  margin: 0 10px; /* Spacing between icons */
-  font-size: 24px; /* Increase icon size */
-  text-decoration: none; /* Remove underline */
-  padding: 10px; /* Add padding to create a box */
-  border-radius: 5px; /* Rounded corners */
-  background-color: rgba(
-    255,
-    255,
-    255,
-    0.1
-  ); /* Background color for the icons */
-  transition: background-color 0.3s ease; /* Transition for hover effect */
+  color: #fff;
+  margin: -24px 10px;
+  font-size: 14px;
+  text-decoration: none;
+  /* padding: 10px; */
+  border-radius: 5px;
+  /* background-color: rgba(255, 255, 255, 0.1); */
+  transition: background-color 0.3s ease;
 }
 
 .social-icons a:hover {
@@ -369,10 +371,15 @@ button.back-to-top {
 
   /* Footer */
   footer {
-    padding: 20px;
+    padding: 20px; /* Increase padding for mobile */
+  }
+  .footer-content {
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center align */
   }
   .social-icons {
-    margin-top: -52px;
+    flex-direction: row; /* Keep icons in a row */
+    margin-top: 10px; /* Space between text and icons */
   }
 }
 
